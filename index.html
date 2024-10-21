@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Black Tree Visualizer</title>
+    <style>
+        #tree-container {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+        }
+        #node-info {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="control-panel">
+        <input type="number" id="number-input" placeholder="Ingrese numero">
+        <button id="insert-btn">Insertar</button>
+        <button id="search-btn">Buscar</button>
+        <button id="inorder-btn">Recorrido Inorden</button>
+        <button id="preorder-btn">Recorrido Preorden</button>
+        <button id="postorder-btn">Recorrido Postorden</button>
+        <!--<button id="delete-btn">Eliminar</button>-->
+    </div>
+    <div id="tree-container"></div>
+    <div id="traversal-result"></div>
+    <div id="node-info"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
